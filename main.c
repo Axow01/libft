@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/15 00:36:38 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/10/15 12:59:21 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/10/15 12:59:34 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/10/15 13:00:53 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
+#include <stdio.h>
 
-int	ft_strlen(char *str)
+int	main(void)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	printf("String lenght: %d", ft_strlen("Bonjour les gens !"));
+	return (0);
 }
