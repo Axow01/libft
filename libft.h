@@ -14,4 +14,8 @@ int	ft_isascii(int c);
 
 int	ft_isprint(int c);
 
+char	ft_toupper(int c);
+
+char	ft_tolower(int c);
+
 char	*ft_strchr(char *s, int c);

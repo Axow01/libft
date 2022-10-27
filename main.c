@@ -28,5 +28,7 @@ int	main(void)
 	printf("Is c printable? %d\n", ft_isprint(37));
 	char *s = "Bonjour";
 	printf("r in Bonjour !: %s\n", ft_strchr(s, 'r'));
+	printf("r toupper: %c\n", ft_toupper('r'));
+	printf("R tolower: %c\n", ft_tolower('R'));
 	return (0);
 }
