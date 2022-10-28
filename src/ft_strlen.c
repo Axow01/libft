@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 00:36:38 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/10/15 12:59:21 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/10/27 21:12:50 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

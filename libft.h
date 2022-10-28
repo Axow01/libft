@@ -1,7 +1,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <unistd.h>
 
 int		ft_strlen(char *str);
@@ -16,10 +15,10 @@ int		ft_isascii(int c);
 
 int		ft_isprint(int c);
 
-char	ft_toupper(int c);
+int		ft_toupper(int c);
 
-char	ft_tolower(int c);
+int		ft_tolower(int c);
 
-char	*ft_strchr(char *s, int c);
+char	*ft_strchr(const char *s, int c);
 
 #endif
