@@ -21,4 +21,6 @@ int		ft_tolower(int c);
 
 char	*ft_strchr(const char *s, int c);
 
+void *ft_memset(void *b, int c, size_t len);
+
 #endif
