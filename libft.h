@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:11:16 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/01 17:28:49 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/03 17:12:21 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <string.h>
 # include <unistd.h>
 
-int		ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 
 int		ft_isalpha(int c);
 

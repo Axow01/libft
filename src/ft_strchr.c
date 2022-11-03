@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:29:58 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/01 16:07:44 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/03 17:16:36 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 
 	str = (char *)s;
 	i = 0;
-	while (i++ <= ft_strlen((char *)s))
+	while (i++ <= (int)ft_strlen((char *)s))
 		if (*str++ == (char)c)
 			return (--str);
 	return (0);
