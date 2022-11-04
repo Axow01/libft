@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 22:43:12 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/04 14:24:42 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/04 13:34:46 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/04 14:17:50 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+// Check if the array start with + or
+//	- or a digit. Check until there is no more digits.
+
+int	ft_atoi(const char *nptr)
 {
 	size_t	i;
+	int		sign;
+	int		n;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (i < n - 1)
+	sign = 1;
+	n = 0;
+	while ((char)nptr[i] && ft_strchr(WHITE_SPACE, (int)nptr[i]))
+		i++;
+	if ((char)nptr[i] == '-' || (char)nptr[i] == '+')
 	{
-		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		if ((char)nptr[i] == '-')
+			sign *= -1;
 		i++;
 	}
-	if (i < n)
-		return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
-	return (0);
+	while (((char)nptr[i]) && ((char)nptr[i] >= '0') && ((char)nptr[i] <= '9'))
+		n = n * 10 + (char)nptr[i++] - '0';
+	return (n * sign);
 }
