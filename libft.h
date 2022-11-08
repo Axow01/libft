@@ -6,10 +6,9 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:11:16 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 12:30:12 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/08 14:13:31 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -73,5 +72,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 
 char	*ft_strjoin(char const *s1, char const *s2);
+
+char	*ft_itoa(int n);
 
 #endif
