@@ -6,13 +6,10 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:11:16 by mmarcott          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/11/04 19:14:09 by mmarcott         ###   ########.fr       */
-=======
-/*   Updated: 2022/11/06 11:04:19 by mmarcott         ###   ########.fr       */
->>>>>>> d1d0a6d04264888122b056ec9453567f761a7e7c
+/*   Updated: 2022/11/08 12:30:12 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -74,5 +71,7 @@ char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*ft_strtrim(char const *s1, char const *set);
+
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
