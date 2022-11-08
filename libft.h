@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:11:16 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 14:37:23 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/08 15:24:36 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_itoa(int n);
 
 char	**ft_split(char const *s, char c);
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
