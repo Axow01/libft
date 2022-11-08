@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:40:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 14:40:54 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:46:51 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	ft_count_words(char const *s, char c)
 {
-	int		i;
-	int		count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;
@@ -35,14 +35,14 @@ static int	ft_count_words(char const *s, char c)
 
 static int	ft_word_len(char const *s, char c)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (s[i] != c && s[i])
 		i++;
 	return (i);
 }
-
+/*
 static char	**ft_free(char **str, int i)
 {
 	while (i >= 0)
@@ -52,7 +52,7 @@ static char	**ft_free(char **str, int i)
 	}
 	free(str);
 	return (NULL);
-}
+}*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -63,18 +63,14 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	if (!s)
-		return (NULL);
 	str = (char **)malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
-	if (!str)
+	if (!str || !s)
 		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c)
 		{
 			str[j] = (char *)malloc(sizeof(char) * (ft_word_len(&s[i], c) + 1));
-			if (!str[j])
-				return (ft_free(str, j));
 			k = 0;
 			while (s[i] != c && s[i])
 				str[j][k++] = s[i++];

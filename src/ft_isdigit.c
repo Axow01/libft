@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:30:22 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/04 13:58:12 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:02:13 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	char	chara;
-
-	chara = (char)c;
-	if (chara >= '0' && chara <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

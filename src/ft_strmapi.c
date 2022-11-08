@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:25:52 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 15:37:13 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:58:31 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!s)
 		return (NULL);
-	newstr = (char *)malloc(sizeof(char) + ft_strlen(s) + 1);
+	newstr = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!newstr)
 		return (NULL);
 	i = 0;
