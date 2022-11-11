@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mick <mick@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 16:11:16 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 20:12:41 by mick             ###   ########.fr       */
+/*   Updated: 2022/11/10 22:11:24 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@ void				ft_putendl_fd(char *s, int fd);
 
 t_list				*ft_lstnew(void *content);
 
-void 				ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *new);
+
+int					ft_lstsize(t_list *lst);
 
 #endif
