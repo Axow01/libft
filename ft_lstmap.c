@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 23:50:03 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:11:18 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:25:41 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 // ft_lstclear besoin et ft_lstadd_back.
 

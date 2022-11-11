@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:21:09 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/04 16:50:28 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:26:24 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

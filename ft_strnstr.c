@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:20:45 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/04 13:30:29 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:26:49 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

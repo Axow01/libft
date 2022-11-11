@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:03:29 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 14:12:40 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:25:19 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	checkintlength(long int n)
 {

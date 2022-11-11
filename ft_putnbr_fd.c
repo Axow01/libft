@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:00:35 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/08 16:14:00 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:26:12 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/10 22:27:35 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:25:48 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

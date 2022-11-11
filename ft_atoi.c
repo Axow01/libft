@@ -6,11 +6,11 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:34:46 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/04 14:17:50 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:25:01 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 // Check if the array start with + or
 //	- or a digit. Check until there is no more digits.
