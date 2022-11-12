@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:45:25 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:26:33 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:07:27 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	i = 0;
 	j = 0;
 	joined = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (!joined || !s1 || !s2)
+	if (!joined)
 		return (NULL);
 	while (s1[i])
 	{

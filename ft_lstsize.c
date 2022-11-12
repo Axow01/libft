@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:25:48 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_lstsize(t_list *lst)
 	t_list	*temp;
 	int		size;
 
+	if (!lst)
+		return (0);
 	temp = lst;
 	size = 0;
 	while (temp != NULL)

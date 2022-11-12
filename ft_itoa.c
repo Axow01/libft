@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:03:29 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:25:19 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 19:39:57 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	checkintlength(long int n)
 
 void	checkzero(long int n, char *str)
 {
+	if (!str)
+		return ;
 	if (n == 0)
 		str[0] = '0';
 }

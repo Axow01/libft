@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:20:45 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:26:49 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:09:46 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!big || !little)
+		return (NULL);
 	i = 0;
 	j = 0;
 	if (little[0] == '\0')

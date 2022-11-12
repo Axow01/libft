@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:29:00 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/03 20:36:42 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:12:53 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	index;
 
+	if (!dst || !src)
+		return (0);
 	i = 0;
 	index = 0;
 	while (dst[i] != '\0' && i < dstsize)

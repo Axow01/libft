@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:34:46 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:25:01 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 19:36:07 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_atoi(const char *nptr)
 	int		sign;
 	int		n;
 
+	if (!nptr)
+		return (0);
 	i = 0;
 	sign = 1;
 	n = 0;

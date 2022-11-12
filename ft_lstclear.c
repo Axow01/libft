@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 23:29:42 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:25:28 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 19:42:21 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*temp;
 	t_list	*next;
 
+	if (!lst)
+		return ;
 	temp = *lst;
 	while (temp)
 	{

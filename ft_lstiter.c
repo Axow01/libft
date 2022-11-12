@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 23:45:03 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:25:34 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:02:09 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;
 
+	if (!lst)
+		return ;
 	temp = lst;
 	while (temp)
 	{

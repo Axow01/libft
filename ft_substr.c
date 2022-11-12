@@ -6,7 +6,7 @@
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:54:10 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:26:57 by mmarcott         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:10:33 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*substring;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	j = 0;
 	if (len > ft_strlen(s))
