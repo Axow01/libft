@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_put_hex.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/23 18:15:47 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/23 18:16:18 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_put_hex(unsigned int nb, char maj)
 {
-	t_list	*temp;
 	int		size;
+	char	*tmp;
 
-	if (!lst)
-		return (0);
-	temp = lst;
-	size = 0;
-	while (temp != NULL)
-	{
-		size++;
-		temp = temp->next;
-	}
+	tmp = ft_ulltoa(nb, 16);
+	size = ft_strlen(tmp) + 1;
+	if (maj == 'X')
+		while (size--)
+			tmp[size] = ft_toupper(tmp[size]);
+	size = ft_putstr_fd(tmp, STDOUT_FILENO);
+	free(tmp);
 	return (size);
 }

@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/23 18:31:40 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/23 18:31:41 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int	ft_lstsize(t_list *lst)
-{
-	t_list	*temp;
-	int		size;
+# include "libft.h"
+# include <stdint.h>
 
-	if (!lst)
-		return (0);
-	temp = lst;
-	size = 0;
-	while (temp != NULL)
-	{
-		size++;
-		temp = temp->next;
-	}
-	return (size);
-}
+int		ft_put_u(unsigned int n);
+char	*ft_ulltoa(unsigned long long n, int base);
+int		ft_put_hex(unsigned int nb, char maj);
+int		ft_put_p(uintptr_t nbr);
+
+#endif

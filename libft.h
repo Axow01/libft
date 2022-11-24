@@ -18,6 +18,8 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdarg.h>
+# include "ft_printf.h"
 
 # define WHITE_SPACE " \t\n\r\v\f"
 

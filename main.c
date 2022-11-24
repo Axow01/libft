@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/23 19:31:50 by marvin            #+#    #+#             */
+/*   Updated: 2022/11/23 19:31:50 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int main(void)
 {
-	t_list	*temp;
-	int		size;
-
-	if (!lst)
-		return (0);
-	temp = lst;
-	size = 0;
-	while (temp != NULL)
-	{
-		size++;
-		temp = temp->next;
-	}
-	return (size);
+	ft_printf("bonjour les gens %X\n", 746734627);
+	return (0);
 }

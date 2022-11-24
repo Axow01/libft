@@ -1,30 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_ulltoa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/23 17:43:19 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/23 18:05:11 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_lstsize(t_list *lst)
+static int	ft_size_of_unb(unsigned long long nb, int base)
 {
-	t_list	*temp;
-	int		size;
+	int	size;
 
-	if (!lst)
-		return (0);
-	temp = lst;
 	size = 0;
-	while (temp != NULL)
+	while (nb)
 	{
 		size++;
-		temp = temp->next;
+		nb /= base;
 	}
 	return (size);
+}
+
+char	*ft_ulltoa(unsigned long long n, int base)
+{
+	char	*result;
+	int		i;
+
+	i = ft_size_of_unb(n, base);
+	if (n == 0)
+		i++;
+	result = ft_calloc(i + 1, sizeof(char));
+	if (!result)
+		return (NULL);
+	while (i--)
+	{
+		result[i] = HEX[n % base];
+		n /= base;
+	}
+	return (result);
 }

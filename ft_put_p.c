@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_put_p.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 22:13:19 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 20:03:53 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/23 18:23:35 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/23 18:28:04 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_put_p(uintptr_t p)
 {
-	t_list	*temp;
+	char	*tmp;
 	int		size;
 
-	if (!lst)
-		return (0);
-	temp = lst;
-	size = 0;
-	while (temp != NULL)
-	{
-		size++;
-		temp = temp->next;
-	}
+	size = ft_putstr_fd("0x", STDOUT_FILENO);
+	tmp = ft_ulltoa((unsigned long)p, 16);
+	size += ft_putstr_fd(tmp, STDOUT_FILENO);
+	if (tmp)
+		free(tmp);
 	return (size);
 }
