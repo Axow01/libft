@@ -22,6 +22,8 @@
 # include "ft_printf.h"
 
 # define WHITE_SPACE " \t\n\r\v\f"
+# define HEX "0123456789abcdef"
+# define HEX_MAJ "0123456789ABCDEF"
 
 typedef struct s_list
 {
@@ -90,11 +92,11 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
-void				ft_putchar_fd(char c, int fd);
+int					ft_putchar_fd(char c, int fd);
 
-void				ft_putstr_fd(char *s, int fd);
+int					ft_putstr_fd(char *s, int fd);
 
-void				ft_putnbr_fd(int n, int fd);
+int					ft_putnbr_fd(long int n, int fd);
 
 void				ft_putendl_fd(char *s, int fd);
 

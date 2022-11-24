@@ -12,15 +12,25 @@
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int counting(long int n)
+{
+	int size;
+
+	size = 1;
+	while (n >= 0)
+	{
+		size++;
+		n /= 10;
+	}
+	return (size);
+}
+
+int	ft_putnbr_fd(long int n, int fd)
 {
 	char	c;
+	int count;
 
-	if (n == -2147483648)
-	{
-		write(fd, "-2147483648", 11);
-		return ;
-	}
+	count = counting(n);
 	if (n < 0)
 	{
 		n *= -1;
@@ -33,4 +43,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	c = n + 48;
 	write(fd, &c, 1);
+	return (count);
 }
