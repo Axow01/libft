@@ -5,30 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmarcott <mmarcott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/08 16:00:35 by mmarcott          #+#    #+#             */
-/*   Updated: 2022/11/11 17:26:12 by mmarcott         ###   ########.fr       */
+/*   Created: 2022/11/24 14:15:32 by mmarcott          #+#    #+#             */
+/*   Updated: 2022/11/24 14:15:32 by mmarcott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int counting(long int n)
+int	counting(long int nb)
 {
-	int size;
+	int	size;
 
 	size = 1;
-	while (n >= 0)
+	if (nb < 0)
 	{
 		size++;
-		n /= 10;
+		nb *= -1;
+	}
+	while (nb > 9)
+	{
+		size++;
+		nb /= 10;
 	}
 	return (size);
 }
 
 int	ft_putnbr_fd(long int n, int fd)
 {
+	int		count;
 	char	c;
-	int count;
 
 	count = counting(n);
 	if (n < 0)
